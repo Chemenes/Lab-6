@@ -6,10 +6,24 @@ font-family: 'Open Sans';
 
 h1 {
   background: black;
+  
+
 }
 
+table{
+  margin: auto;
+
+}
 main{
-  background: whitesmoke;
+  background: rgb(216, 208, 208);
   width: 50%;
-  color: rgb(154, 118, 52);
+  color: oldlace;
+}
+
+td {
+  padding: 10px;
+  border: solid black;
+  text-align: center;
+  color: darkred;
+  background-color: white;
 }
