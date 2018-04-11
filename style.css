@@ -1,0 +1,15 @@
+body {
+background: url(https://raw.githubusercontent.com/codefellows/seattle-201d34/master/06-dom-objects-domain-modeling/lab/assets/salmon.png);
+font-family: 'Open Sans';
+}
+
+
+h1 {
+  background: black;
+}
+
+main{
+  background: black;
+  width: 50%;
+  color: oldlace;
+}
