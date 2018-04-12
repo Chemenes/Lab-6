@@ -1,11 +1,14 @@
 body {
-background: url(https://raw.githubusercontent.com/codefellows/seattle-201d34/master/06-dom-objects-domain-modeling/lab/assets/salmon.png);
+background-color: papayawhip;
 font-family: 'Open Sans';
 }
 
 
 h1 {
-  background: black;
+  background: papayawhip;
+  border-right-width: 30px;
+  text-align: center;
+  font-size: 40px;
   
 
 }
@@ -27,3 +30,18 @@ td {
   color: darkred;
   background-color: white;
 }
+
+img{                      
+display: block;
+margin: auto;
+width: 400px;
+
+}
+
+img:hover {
+ -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); 
+}
+
+
+
