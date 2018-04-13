@@ -3,6 +3,11 @@ background-color: papayawhip;
 font-family: 'Open Sans';
 }
 
+title{
+
+text-align: center;
+
+}
 
 h1 {
   background: papayawhip;
@@ -11,6 +16,9 @@ h1 {
   font-size: 40px;
   
 
+}
+p{
+text-align: center;
 }
 
 table{
@@ -42,6 +50,28 @@ img:hover {
  -webkit-transform: scaleX(-1);
     transform: scaleX(-1); 
 }
+span{
+  max-width: 100px;
+  margin: auto;
+ 
+}
+
+ul{
+  padding: 40px;
+  background-color: salmon;
+  width: 50px;
+  border-radius: 10px;
+  font-size: 13px;
+  display: inline-block;
+ 
+
+
+
+}
+/* #storediv{
+  max-width: auto;
+  margin: auto;
+} */
 
 
 
