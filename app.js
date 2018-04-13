@@ -309,7 +309,6 @@ var allStores = [];
 
 
 
-
 function Store (location, minCust, maxCust, avgCookie) {
   this.location = location;
   this.minCust = minCust;
