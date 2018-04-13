@@ -376,6 +376,7 @@ Store.prototype.totalSold = function () {
   this.dailySales = cookiesSoldCalc;
 };
 
+
 var firstPike = new Store('1st and Pike', 23, 65, 6.3);
 var seaTac = new Store('Seatac Airport', 3 ,24, 1.2);
 var seaCenter = new Store('Seattle Center',11,38,3.7);
