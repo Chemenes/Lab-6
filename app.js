@@ -1,304 +1,4 @@
 'use strict';
-// var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
-
-// // 1st and Pike.
-// var firstPike = {
-//   minimumCust: 23,
-//   maximumCust: 65,
-//   avgCookiesCust: 6.3,
-//   custPerHour: [],
-//   soldPerHour: [],
-//   totalSold: 0,
-
-//   randomCustPerHour: function () {
-//     for (var i = 0; i < storeHours.length; i++) {
-//       var custPerHourInt = Math.random() * (this.maximumCust - this.minimumCust) + this.minimumCust;
-//       custPerHourInt = Math.round(custPerHourInt);
-//       this.custPerHour.push(custPerHourInt);
-//     }
-//   },
-
-//   cookiesPerHour: function () {
-//     var avgCookiesCalc = 0;
-//     for (var i = 0; i < storeHours.length; i++) {
-//       avgCookiesCalc = Math.floor(this.custPerHour[i] * this.avgCookiesCust);
-//       this.soldPerHour.push(avgCookiesCalc);
-//     }
-//   },
-
-//   totalCookiesSold: function () {
-//     var cookiesSoldCalc = 0;
-//     for (var i = 0; i < storeHours.length; i++) {
-//       cookiesSoldCalc += this.soldPerHour[i];
-//     }
-//     this.totalSold = cookiesSoldCalc;
-//   },
-
-//   renderSales: function () {
-//     // Access the parent element from the DOM.
-//     var ulElem = document.getElementById('first-pike');
-//     for (var i = 0; i < storeHours.length; i++) {
-//       // 1. Create element.
-//       var listItemElem = document.createElement('li');
-//       // 2. Give it content.
-//       listItemElem.innerHTML = storeHours[i] + ':<br> ' + this.soldPerHour[i];
-//       //3. Append it to the DOM.
-//       ulElem.appendChild(listItemElem);
-//     }
-//   }
-// };
-// function callFirstPike() {
-//   firstPike.randomCustPerHour();
-//   firstPike.cookiesPerHour();
-//   firstPike.totalCookiesSold();
-//   firstPike.renderSales();
-// }
-// callFirstPike();
-
-// var ulElem = document.getElementById('first-pike');
-// var listItemElem = document.createElement('li');
-// listItemElem.textContent = 'Total: ' + firstPike.totalSold;
-// ulElem.appendChild(listItemElem);
-
-// // //SeaTac Airport
-
-// var seaTac = {
-//   minimumCust: 3,
-//   maximumCust: 24,
-//   avgCookiesCust: 1.2,
-//   custPerHour: [],
-//   soldPerHour: [],
-//   totalSold: 0,
-
-//   randomCustPerHour: function () {
-//     for (var i = 0; i < storeHours.length; i++) {
-//       var custPerHourInt = Math.random() * (this.maximumCust - this.minimumCust) + this.minimumCust;
-//       custPerHourInt = Math.round(custPerHourInt);
-//       this.custPerHour.push(custPerHourInt);
-//     }
-//   },
-
-//   cookiesPerHour: function () {
-//     var avgCookiesCalc = 0;
-//     for (var i = 0; i < storeHours.length; i++) {
-//       avgCookiesCalc = Math.floor(this.custPerHour[i] * this.avgCookiesCust);
-//       this.soldPerHour.push(avgCookiesCalc);
-//     }
-//   },
-
-//   totalCookiesSold: function () {
-//     var cookiesSoldCalc = 0;
-//     for (var i = 0; i < storeHours.length; i++) {
-//       cookiesSoldCalc += this.soldPerHour[i];
-//     }
-//     this.totalSold = cookiesSoldCalc;
-//   },
-
-//   renderSales: function () {
-//     // Access the parent element from the DOM.
-//     var ulElem = document.getElementById('sea-tac');
-//     for (var i = 0; i < storeHours.length; i++) {
-//       // 1. Create element.
-//       var listItemElem = document.createElement('li');
-//       // 2. Give it content.
-//       listItemElem.innerHTML = storeHours[i] + ':<br> ' + this.soldPerHour[i];
-//       //3. Append it to the DOM.
-//       ulElem.appendChild(listItemElem);
-//     }
-//   }
-// };
-// function callSeaTac() {
-//   seaTac.randomCustPerHour();
-//   seaTac.cookiesPerHour();
-//   seaTac.totalCookiesSold();
-//   seaTac.renderSales();
-// }
-// callSeaTac();
-
-// ulElem = document.getElementById('sea-tac');
-// listItemElem = document.createElement('li');
-// listItemElem.textContent = 'Total: ' + seaTac.totalSold;
-// ulElem.appendChild(listItemElem);
-
-// // //Seattle Center
-
-// var seaCenter = {
-//   minimumCust: 11,
-//   maximumCust: 38,
-//   avgCookiesCust: 3.7,
-//   custPerHour: [],
-//   soldPerHour: [],
-//   totalSold: 0,
-
-//   randomCustPerHour: function () {
-//     for (var i = 0; i < storeHours.length; i++) {
-//       var custPerHourInt = Math.random() * (this.maximumCust - this.minimumCust) + this.minimumCust;
-//       custPerHourInt = Math.round(custPerHourInt);
-//       this.custPerHour.push(custPerHourInt);
-//     }
-//   },
-
-//   cookiesPerHour: function () {
-//     var avgCookiesCalc = 0;
-//     for (var i = 0; i < storeHours.length; i++) {
-//       avgCookiesCalc = Math.floor(this.custPerHour[i] * this.avgCookiesCust);
-//       this.soldPerHour.push(avgCookiesCalc);
-//     }
-//   },
-
-//   totalCookiesSold: function () {
-//     var cookiesSoldCalc = 0;
-//     for (var i = 0; i < storeHours.length; i++) {
-//       cookiesSoldCalc += this.soldPerHour[i];
-//     }
-//     this.totalSold = cookiesSoldCalc;
-//   },
-
-//   renderSales: function () {
-//     // Access the parent element from the DOM.
-//     var ulElem = document.getElementById('sea-center');
-//     for (var i = 0; i < storeHours.length; i++) {
-//       // 1. Create element.
-//       var listItemElem = document.createElement('li');
-//       // 2. Give it content.
-//       listItemElem.innerHTML = storeHours[i] + ':<br> ' + this.soldPerHour[i];
-//       //3. Append it to the DOM.
-//       ulElem.appendChild(listItemElem);
-//     }
-//   }
-// };
-// function callSeaCenter() {
-//   seaCenter.randomCustPerHour();
-//   seaCenter.cookiesPerHour();
-//   seaCenter.totalCookiesSold();
-//   seaCenter.renderSales();
-// }
-// callSeaCenter();
-
-// ulElem = document.getElementById('sea-center');
-// listItemElem = document.createElement('li');
-// listItemElem.textContent = 'Total: ' + seaCenter.totalSold;
-// ulElem.appendChild(listItemElem);
-
-// // //Capitol Hill
-
-// var capHill = {
-//   minimumCust: 20,
-//   maximumCust: 38,
-//   avgCookiesCust: 2.3,
-//   custPerHour: [],
-//   soldPerHour: [],
-//   totalSold: 0,
-
-//   randomCustPerHour: function () {
-//     for (var i = 0; i < storeHours.length; i++) {
-//       var custPerHourInt = Math.random() * (this.maximumCust - this.minimumCust) + this.minimumCust;
-//       custPerHourInt = Math.round(custPerHourInt);
-//       this.custPerHour.push(custPerHourInt);
-//     }
-//   },
-
-//   cookiesPerHour: function () {
-//     var avgCookiesCalc = 0;
-//     for (var i = 0; i < storeHours.length; i++) {
-//       avgCookiesCalc = Math.floor(this.custPerHour[i] * this.avgCookiesCust);
-//       this.soldPerHour.push(avgCookiesCalc);
-//     }
-//   },
-
-//   totalCookiesSold: function () {
-//     var cookiesSoldCalc = 0;
-//     for (var i = 0; i < storeHours.length; i++) {
-//       cookiesSoldCalc += this.soldPerHour[i];
-//     }
-//     this.totalSold = cookiesSoldCalc;
-//   },
-
-//   renderSales: function () {
-//     // Access the parent element from the DOM.
-//     var ulElem = document.getElementById('capitol-hill');
-//     for (var i = 0; i < storeHours.length; i++) {
-//       // 1. Create element.
-//       var listItemElem = document.createElement('li');
-//       // 2. Give it content.
-//       listItemElem.innerHTML = storeHours[i] + ':<br> ' + this.soldPerHour[i];
-//       //3. Append it to the DOM.
-//       ulElem.appendChild(listItemElem);
-//     }
-//   }
-// };
-// function callCapHill() {
-//   capHill.randomCustPerHour();
-//   capHill.cookiesPerHour();
-//   capHill.totalCookiesSold();
-//   capHill.renderSales();
-// }
-// callCapHill();
-
-// ulElem = document.getElementById('capitol-hill');
-// listItemElem = document.createElement('li');
-// listItemElem.textContent = 'Total: ' + capHill.totalSold;
-// ulElem.appendChild(listItemElem);
-
-// // //Alki
-
-// var alkiBeach = {
-//   minimumCust: 2,
-//   maximumCust: 16,
-//   avgCookiesCust: 4.6,
-//   custPerHour: [],
-//   soldPerHour: [],
-//   totalSold: 0,
-
-//   randomCustPerHour: function () {
-//     for (var i = 0; i < storeHours.length; i++) {
-//       var custPerHourInt = Math.random() * (this.maximumCust - this.minimumCust) + this.minimumCust;
-//       custPerHourInt = Math.round(custPerHourInt);
-//       this.custPerHour.push(custPerHourInt);
-//     }
-//   },
-
-//   cookiesPerHour: function () {
-//     var avgCookiesCalc = 0;
-//     for (var i = 0; i < storeHours.length; i++) {
-//       avgCookiesCalc = Math.floor(this.custPerHour[i] * this.avgCookiesCust);
-//       this.soldPerHour.push(avgCookiesCalc);
-//     }
-//   },
-
-//   totalCookiesSold: function () {
-//     var cookiesSoldCalc = 0;
-//     for (var i = 0; i < storeHours.length; i++) {
-//       cookiesSoldCalc += this.soldPerHour[i];
-//     }
-//     this.totalSold = cookiesSoldCalc;
-//   },
-
-//   renderSales: function () {
-//     // Access the parent element from the DOM.
-//     var ulElem = document.getElementById('alki-beach');
-//     for (var i = 0; i < storeHours.length; i++) {
-//       // 1. Create element.
-//       var listItemElem = document.createElement('li');
-//       // 2. Give it content.
-//       listItemElem.innerHTML = storeHours[i] + ':<br> ' + this.soldPerHour[i];
-//       //3. Append it to the DOM.
-//       ulElem.appendChild(listItemElem);
-//     }
-//   }
-// };
-// function callAlkiBeach() {
-//   alkiBeach.randomCustPerHour();
-//   alkiBeach.cookiesPerHour();
-//   alkiBeach.totalCookiesSold();
-//   alkiBeach.renderSales();
-// }
-// callAlkiBeach();
-
-// ulElem = document.getElementById('alki-beach');
-// listItemElem = document.createElement('li');
-// listItemElem.textContent = 'Total: ' + alkiBeach.totalSold;
-// ulElem.appendChild(listItemElem);
 
 var storeTable = document.getElementById('store');
 
@@ -325,21 +25,7 @@ Store.prototype.renderRow = function(){
   var tdElement = document.createElement('td');
   tdElement.textContent = this.location;
 
-  function renderHours() {
-    var theadElement = document.getElementById('store');
-    var thElement = document.createElement('td');
-    thElement.textContent = '';
-    theadElement.appendChild(thElement);
-    for(var i =0; i < hours.length; i++){
-      thElement = document.createElement('th');
-      thElement.textContent = hours[i];
-      theadElement.appendChild(thElement);
-    }
-    thElement = document.createElement('th');
-    thElement.textContent = 'Cookie Total';
-    theadElement.appendChild(thElement);
-  }
-  renderHours();
+
 
   trElement.appendChild(tdElement);
   for(var i = 0; i < hours.length; i++){
@@ -368,6 +54,24 @@ Store.prototype.populateHourlySales = function () {
   }
 };
 
+function renderHours() {
+  var trElement = document.createElement('tr');
+  var theadElement = document.getElementById('store');
+  var thElement = document.createElement('th');
+  thElement.textContent = '';
+  trElement.appendChild(thElement);
+  for (var i = 0; i < hours.length; i++) {
+    thElement = document.createElement('th');
+    thElement.textContent = hours[i];
+    trElement.appendChild(thElement);
+  }
+  thElement = document.createElement('th');
+  thElement.textContent = 'Cookie Total';
+  trElement.appendChild(thElement);
+  theadElement.appendChild(trElement);
+}
+renderHours();
+
 Store.prototype.totalSold = function () {
   var cookiesSoldCalc = 0;
   for (var i = 0; i < hours.length; i++) {
@@ -375,6 +79,8 @@ Store.prototype.totalSold = function () {
   }
   this.dailySales = cookiesSoldCalc;
 };
+
+
 
 
 var firstPike = new Store('1st and Pike', 23, 65, 6.3);
@@ -408,9 +114,28 @@ alkiBeach.populateHourlySales();
 alkiBeach.totalSold();
 alkiBeach.renderRow();
 
+// var openingElement = document.getElementById('opening');
 
+// openingElement.addEventListener('click', function() {
+//   alert('clicked');
+// }
+function addLocationSubmitted(event) {
+  event.preventDefault();
+  var formElement = event.target;
 
+  var newLocation = new Store(formElement.location.value,
+    formElement.minCust.value,
+    formElement.maxCust.value, formElement.avgCookie.value);
+  console.log(newLocation);
 
+  newLocation.randomNumber();
+  newLocation.cookiesSoldCalc();
+  newLocation.totalSold();
+  newLocation.renderRow();
+}
+
+var storeFormElement = document.getElementById('add-store');
+storeFormElement.addEventListener('submit', addLocationSubmitted);
 
 
 

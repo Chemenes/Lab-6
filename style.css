@@ -43,6 +43,7 @@ img{
 display: block;
 margin: auto;
 width: 400px;
+background-color: transparent;
 
 }
 
@@ -63,10 +64,22 @@ ul{
   border-radius: 10px;
   font-size: 13px;
   display: inline-block;
- 
+ }
 
+.secondfish {
+color: transparent;
+}
 
+label{
 
+  color: black;
+}
+
+fieldset{
+  margin-left: 10px;
+}
+#storediv{
+margin-left: 30px;
 }
 /* #storediv{
   max-width: auto;
