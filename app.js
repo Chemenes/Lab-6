@@ -123,18 +123,21 @@ function addLocationSubmitted(event) {
   event.preventDefault();
   var formElement = event.target;
 
-  var newLocation = new Store(formElement.location.value,
-    formElement.minCust.value,
-    formElement.maxCust.value, formElement.avgCookie.value);
+  var newLocation = new Store(formElement.storeName.value,
+    Number(formElement.minimumCust.value),
+    Number(formElement.maximumCust.value), Number(formElement.averageSales.value));
+
   console.log(newLocation);
 
+
+
   newLocation.randomNumber();
-  newLocation.cookiesSoldCalc();
+  newLocation.populateHourlySales();
   newLocation.totalSold();
   newLocation.renderRow();
 }
 
-var storeFormElement = document.getElementById('add-store');
+var storeFormElement = document.getElementById('get-store');
 storeFormElement.addEventListener('submit', addLocationSubmitted);
 
 
